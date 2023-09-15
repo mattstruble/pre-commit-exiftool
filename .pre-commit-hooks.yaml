@@ -1,0 +1,16 @@
+---
+- id: strip-exif
+  name: strip-exif
+  description: strip exif metadata except for orientation
+  language: docker
+  types: ["image"]
+  exclude_types: ["svg"]
+  args:
+    [
+      "-all=",
+      "--icc_profile:all",
+      "-tagsfromfile",
+      "@",
+      "-orientation",
+      "-overwrite_original",
+    ]
