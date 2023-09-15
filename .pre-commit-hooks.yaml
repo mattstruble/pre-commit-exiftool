@@ -4,6 +4,7 @@
   description: strip exif metadata except for orientation
   language: docker
   types: ["image"]
+  entry: exiftool
   exclude_types: ["svg"]
   args:
     [
