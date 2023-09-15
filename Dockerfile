@@ -2,7 +2,7 @@ FROM alpine
 
 ENV EXIFTOOL_VERSION=10.20
 
-RUN apk add --nocache perl make
+RUN apk add --no-cache perl make
 
 WORKDIR /app
 
