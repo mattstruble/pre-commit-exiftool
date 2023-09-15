@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM alpine
 
 ENV EXIFTOOL_VERSION=10.20
 
